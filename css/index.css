@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Karla';
+  @apply bg-gray-900 text-white;
+}
+
+.button-link-colors{
+  @apply transition duration-200 bg-white border-white text-gray-900;
+}
+
+.button-link-colors:hover{
+  @apply text-gray-400 bg-transparent;
+}
+.social-link-colors{
+  @apply text-white;
+}
+.social-link-colors:hover{
+  @apply text-gray-600;
+}
