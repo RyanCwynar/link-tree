@@ -8,7 +8,7 @@ function LinkList() {
           <li className="mb-4" key={link.title}>
             <a
               //className="relative button-link-colors transition duration-200 font-bold bg-green-500 border-green-500 border-2 hover:bg-transparent py-4 w-100 block text-center text-gray-800 hover:text-green-400 rounded-lg pl-12 md:px-12"
-              className="relative button-link-colors font-bold border-2 py-4 w-100 block text-center rounded-lg pl-12 md:px-12"
+              className="relative button-link-colors font-bold border-2 py-4 w-100 block text-center rounded-lg px-12 md:px-12"
               href={link.url}
               alt={link.title}
               target="_blank"
