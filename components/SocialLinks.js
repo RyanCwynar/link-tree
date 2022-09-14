@@ -4,7 +4,7 @@ function SocialLinks() {
   return (
     <ul className="py-6">
       {socialLinks.map(link => (
-        <li className="mr-3 inline" key={link.icon}>
+        <li className="mx-2 inline" key={link.icon}>
           <a
             className="social-link-colors"
             href={link.url}
