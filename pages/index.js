@@ -4,8 +4,12 @@ import Footer from "../components/Footer";
 import Head from 'next/head'
 import { initGA, logPageView } from '../utils/analytics'
 import { useEffect } from 'react';
+import useEagerConnect from '../hooks/useEagerConnect';
+import Wallet from '../components/Wallet';
+import { Tip } from '../components/Tip';
 
 function IndexPage() {
+  let triedToEagerConnect = useEagerConnect();
   useEffect(() => {
     if (!window.GA_INITIALIZED) {
       initGA()
@@ -16,6 +20,11 @@ function IndexPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
+
+      <div className='flex items-center space-x-2 justify-center pt-4'>
+        <Tip />
+        <Wallet triedToEagerConnect={triedToEagerConnect} />
+      </div>
       {/* FontAwesome CDN style tag */}
       <Head>
         <title>Ryan | byldr.eth</title>

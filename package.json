@@ -21,10 +21,16 @@
   },
   "homepage": "https://github.com/montoulieu/link-ent#readme",
   "dependencies": {
+    "@ethersproject/providers": "^5.7.0",
+    "@headlessui/react": "^1.7.1",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
     "next": "^10.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-ga": "^3.2.1"
+    "react-ga": "^3.2.1",
+    "react-icons": "^4.4.0",
+    "web3-react": "^5.0.5"
   },
   "devDependencies": {
     "autoprefixer": "9.7.6",
