@@ -7,14 +7,17 @@ export default function LinkList() {
         {links.map(link => (
           <li className="mb-4" key={link.title}>
             <a
-              className="relative transition duration-200 font-bold bg-green-500 border-green-500 border-2 hover:bg-transparent py-4 w-100 block text-center text-gray-800 hover:text-green-400 rounded-lg pl-12 md:px-12"
+              className="relative transition h-[4em] text-center duration-200 font-bold bg-blue-500 border-blue-500 border-2 hover:bg-transparent py-4 w-100 block text-center text-gray-800 hover:text-blue-400 rounded-lg px-12"
               href={link.url}
               alt={link.title}
               target="_blank"
               rel="noopener"
             >
-              <span className="text-3xl absolute left-0 top-0 bottom-0 pl-3 flex items-center">{link.emoji}</span>
-              <span>{link.title}</span>
+              <div className="grid">
+                <span className="text-3xl absolute left-0 top-0 bottom-0 pl-3 flex items-center">{link.emoji}</span>
+                {/* <span className="absolute left-[50%] top-[50%]  transform translate-x-[-50%] translate-y-[-50%]">{link.title}</span> */}
+                <div className="place-self-center w-max">{link.title}</div>
+              </div>
             </a>
           </li>
         ))}
